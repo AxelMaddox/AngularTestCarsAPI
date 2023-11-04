@@ -1,0 +1,27 @@
+.button {
+  padding: 10px 20px;
+  background-color: #f50909;
+  color: white;
+  font-size: 39px;
+  border-radius: 35px;
+}
+.header {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(112, 112, 111);
+}
+
+.h1 {
+
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.todo {
+  padding: auto;
+  padding-bottom: 550px;
+
+  background-color: #c9c9c9;
+}

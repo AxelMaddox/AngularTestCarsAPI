@@ -1,0 +1,35 @@
+<div class="afuera2">
+<h1 class ="header" style="text-align: center;">SITIO WEB DE CARROS</h1>
+<div class=" container">
+
+<div class="cardmb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img class="imagen" [src]="'assets/carro-deportivo.png'" alt="Carro deportivo" >
+    </div>
+    <div>
+      <div class="tarjeta" *ngFor="let dato of datos; let i = index" style="text-align: center;">
+        <div *ngIf="i === tarjetaActual">
+          <h1>Detalles del carro:</h1>
+          <p>Marca: {{ dato.Marca }}</p>
+          <p>Modelo: {{ dato.Modelo }}</p>
+          <p>Tipo: {{ dato.Tipo }}</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+        <div class="columna-botones">
+          <button class="botones" style="text-align: center;" *ngFor="let dato of datos; let i = index" (click)="mostrarTarjeta(i)">Mostrar carro {{ i + 1 }}</button>
+        </div>
+
+
+
+</div>
+</div>
+
